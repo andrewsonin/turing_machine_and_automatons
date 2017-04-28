@@ -19,7 +19,7 @@ class Wolfram():
             print(' '.join(map(str, seq)))
             for i in range(len_seq):
                 j = (lambda x: -1 if x == len_seq - 1 else x + 1)(i)
-                new_states[i] = self.rules[(seq[i-1], seq[i], seq[j])]
+                new_states[i] = self.rules[seq[i-1], seq[i], seq[j]]
             seq = new_states
             sleep(0.3)
 
