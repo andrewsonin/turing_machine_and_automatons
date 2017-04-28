@@ -1,0 +1,11 @@
+1 $ 1 1 $
+1 a 2a 1 a
+1 b 2b 1 b
+2a a ret -1 a
+2a b ret -1 a
+2a $ 0 0 $
+2b $ 0 0 $
+2b a ret -1 b
+2b b ret -1 b
+ret a 0 0 $
+ret b 0 0 $
